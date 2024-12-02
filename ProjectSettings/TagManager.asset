@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Item
+  - Anchor
+  - Tape
+  - Door
   layers:
   - Default
   - TransparentFX
