@@ -5,7 +5,8 @@ using UnityEngine;
 public class Box : MonoBehaviour
 {
     public GameObject tapedBox;
-    
+
+    public GameObject parent;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +37,7 @@ public class Box : MonoBehaviour
     public void TapeBox()
     {
         Instantiate(tapedBox, transform.position, transform.rotation);
+        parent.SetActive(false);
         Destroy(gameObject);
     }
     
