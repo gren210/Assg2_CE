@@ -8,6 +8,7 @@ TagManager:
   - Anchor
   - Tape
   - Door
+  - Card
   layers:
   - Default
   - TransparentFX
