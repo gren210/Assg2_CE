@@ -13,11 +13,11 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ignore Items
   - Water
   - UI
-  - 
-  - 
+  - Items
+  - Ignore Player
   - 
   - 
   - 

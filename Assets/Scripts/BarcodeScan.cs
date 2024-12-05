@@ -38,6 +38,8 @@ public class BarcodeScan : XRComponents
             if (hitInfo.transform.tag == "Item")
             {
                 audioSource.Play();
+                string currentItemName = hitInfo.collider.gameObject.GetComponent<Item>().itemName;
+                
                 //hitInfo.collider.gameObject.SetActive(false);
             }
         }

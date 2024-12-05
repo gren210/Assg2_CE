@@ -9,6 +9,12 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public static GameManager instance;
     
+    public InfoUI infoUI;
+
+    public string[] itemsList;
+    
+    
+    
     /// <summary>
     /// This Awake function ensures that there is only one instance of the GameManager.
     /// </summary>
