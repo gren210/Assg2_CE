@@ -39,7 +39,7 @@ public class BarcodeScan : XRComponents
             {
                 audioSource.Play();
                 string currentItemName = hitInfo.collider.gameObject.GetComponent<Item>().itemName;
-                
+                GameManager.instance.scannedUI.AddScannedItem(currentItemName);
                 //hitInfo.collider.gameObject.SetActive(false);
             }
         }

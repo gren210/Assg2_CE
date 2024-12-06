@@ -58,9 +58,10 @@ public class InfoUI : MonoBehaviour
         for (int i = 0; i < currentItems.Count; i++)
         {
             ItemOrderText itemText = itemTextList[i];
-            itemText.quantityText.text = currentQuantity[i].ToString();
-            itemText.productText.text = currentItems[i];
-            itemText.packedText.text = "0";
+            //itemText.quantityText.text = currentQuantity[i].ToString();
+            //itemText.productText.text = currentItems[i];
+            //itemText.packedText.text = "0";
+            itemText.SetText(currentQuantity[i], currentItems[i], 0);
         }
     }
 }

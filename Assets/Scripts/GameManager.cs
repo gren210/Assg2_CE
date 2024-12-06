@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     
     public InfoUI infoUI;
+    
+    public ScannedUI scannedUI;
 
     public string[] itemsList;
     

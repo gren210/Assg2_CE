@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3023803629937266849}
   - component: {fileID: 6910941097395826164}
   - component: {fileID: 7614693707102495129}
+  - component: {fileID: 1484201572088092586}
   - component: {fileID: 1589465629315884841}
   - component: {fileID: 409754474092455744}
   - component: {fileID: 1176356077176345874}
@@ -87,6 +88,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1484201572088092586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8532962037782128983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af5f524fa50e4e64281dff941f2778a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Prime Meta Moon
 --- !u!65 &1589465629315884841
 BoxCollider:
   m_ObjectHideFlags: 0
