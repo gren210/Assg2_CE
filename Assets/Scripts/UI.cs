@@ -40,15 +40,16 @@ public class UI : MonoBehaviour
     /// <summary>
     /// Starts the game by loading the game scene and updating the instruction text.
     /// </summary>
-    public void StartGame()
+    public void Start()
     {
+        GameManager.instance.playerUI = this;
     }
 
     IEnumerator LoadLevel(int levelInt)
     {
         transitionAnimator.SetTrigger("Transition");
         yield return new WaitForSeconds(1.5f);
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(levelInt);
     }
 
     /// <summary>
@@ -57,6 +58,11 @@ public class UI : MonoBehaviour
     public void MainMenu()
     { 
         StartCoroutine(LoadLevel(1));
+    }
+
+    public void EndGame()
+    {
+        StartCoroutine(LoadLevel(0));
     }
 
     public void Quit()
@@ -78,11 +84,6 @@ public class UI : MonoBehaviour
             Time.timeScale = 0f;
         }
         pauseUI.SetActive(!pauseUI.activeSelf);
-    }
-
-    void Start()
-    {
-        AudioListener.volume = 1f;
     }
 
     /// <summary>

@@ -23,6 +23,16 @@ public class BoxDestroy : MonoBehaviour
         if (other.tag == "Item")
         {
             other.transform.SetParent(parent);
+            if (GameManager.instance.currentItems.Contains(other.GetComponent<Item>().name))
+            {
+                int index = GameManager.instance.currentItems.IndexOf(other.GetComponent<Item>().name);
+                GameManager.instance.currentQuantity[index]++;
+            }
+            else
+            {
+                GameManager.instance.currentItems.Add(other.GetComponent<Item>().name);
+                GameManager.instance.currentQuantity.Add(1);
+            }
         }
     }
 
@@ -31,6 +41,11 @@ public class BoxDestroy : MonoBehaviour
         if (other.tag == "Item")
         {
             other.transform.SetParent(null);
+            int index = GameManager.instance.currentItems.IndexOf(other.GetComponent<Item>().name);
+            if (GameManager.instance.currentQuantity[index] == 1)
+            {
+                GameManager.instance.currentQuantity.Remove(index);
+            }
         }
     }
 }

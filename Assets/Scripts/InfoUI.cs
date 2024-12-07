@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -17,6 +18,8 @@ public class InfoUI : MonoBehaviour
     public int maxItemCount;
 
     public int maxQuantityCount;
+
+    public GameObject UIObject;
     
     // Start is called before the first frame update
     void Start()
@@ -28,7 +31,7 @@ public class InfoUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void RandomiseItems()

@@ -109,13 +109,14 @@ GameObject:
   - component: {fileID: 8192179810664204972}
   - component: {fileID: 8903369903987568935}
   - component: {fileID: 2131932771883126203}
+  - component: {fileID: 5849802127328681050}
   m_Layer: 5
   m_Name: Player UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2967190908467117992
 RectTransform:
   m_ObjectHideFlags: 0
@@ -199,3 +200,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &5849802127328681050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4910967927278600127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8392a08df7217742a69fe902686f6de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLookAt: 0
+  pauseUI: {fileID: 0}
+  volumeToggle: {fileID: 0}
+  transitionAnimator: {fileID: 6571352615265782797}
